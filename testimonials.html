@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testimonials</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAZUE_ahNGuR3GfXlqHWzL3d79K5PwA_Fc",
+            authDomain: "final-project-c9691.firebaseapp.com",
+            databaseURL: "https://final-project-c9691.firebaseio.com",
+            projectId: "final-project-c9691",
+            storageBucket: "final-project-c9691.appspot.com",
+            messagingSenderId: "894072039960"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <link rel="stylesheet" href="css/finalproject.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Sacramento|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="javascript/finalproject.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/mudkip.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
+        Sharlene Tan
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="aboutme.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="experience.html">Experience</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Favourites</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="movies.html">Movies</a>
+                    <a class="dropdown-item" href="shows.html">Shows</a>
+                    <a class="dropdown-item" href="books.html">Books</a>
+                    <a class="dropdown-item" href="music.html">Music</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="testimonials.html">Testimonials</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactme.html">Contact Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pictureupload.html">What about you?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#modal">Options</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="modal" id="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Options</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <button type="button" class="btn btn-dark" onclick="changebgcolor()">Dark mode</button>
+                <button type="button" class="btn btn-primary" onclick="changefontcolor()">Change font color</button>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<p class="header1">Real testimonials from real people</p>
+<p>I promise all of these testimonials are completely true. They really said these things.</p>
+
+<div class="container">
+    <div class="cardscustom row justify-content-center">
+        <div class="card col-md-5 text-center">
+            <img class="card-img-top" src="images/mom.jpg" alt="mom">
+            <div class="card-body">
+                <h5 class="card-title">Sylvia - Mom</h5>
+                <p class="card-text">"Wow! Sharlene is the greatest daughter one can have. She never stresses me out. Could do more chores, though!"</p>
+                <img src="images/starrating.png" alt="rating">
+            </div>
+        </div>
+
+        <div class="card col-md-5 text-center">
+            <img class="card-img-top" src="images/bf.jpg" alt="boyfriend">
+            <div class="card-body">
+                <h5 class="card-title">Andrew - Boyfriend</h5>
+                <p class="card-text">"Sharlene is the best girlfriend on Earth! I promise to never cheat on her or else I'll eat my own poop."</p>
+                <img src="images/starrating.png" alt="rating">
+            </div>
+        </div>
+
+        <div class="card col-md-5 text-center">
+            <img class="card-img-top" src="images/bff.jpg" alt="best friend">
+            <div class="card-body">
+                <h5 class="card-title">Cherry - Best friend</h5>
+                <p class="card-text">"I don't know what I'd do without my best friend. She gives the most amazing advice that I never follow!"</p>
+                <img src="images/starrating.png" alt="rating">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <p>Let's keep in touch!</p>
+    <a href="https://www.facebook.com/sharlenetaaan" class="fa fa-facebook"></a>
+    <br>
+    <p>Copyright © 2019 - All rights reserved</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

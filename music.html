@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favourite Songs</title>
+    <link rel="stylesheet" href="css/finalproject.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Sacramento|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/mudkip.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
+        Sharlene Tan
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="aboutme.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="experience.html">Experience</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Favourites</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="movies.html">Movies</a>
+                    <a class="dropdown-item" href="shows.html">Shows</a>
+                    <a class="dropdown-item" href="books.html">Books</a>
+                    <a class="dropdown-item" href="music.html">Music</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="testimonials.html">Testimonials</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactme.html">Contact Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pictureupload.html">What about you?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#modal">Options</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="modal" id="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Options</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <button type="button" class="btn btn-dark" onclick="changebgcolor()">Dark mode</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <p class="header1">My favourite songs</p>
+    <p>I listen to all types of music.
+        <br>Except EDM. Never EDM.
+        <br>My favourites are R&B and indie.</p>
+</div>
+
+<div class="favorites">
+    <div class="example">
+        <p>History by 88rising</p>
+        <iframe src="https://open.spotify.com/embed/track/4TwVtW8hS5LyLoDtJGpUOg" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+
+    <div class="example">
+        <p>TAlk tO Me by Tory Lanez</p>
+        <iframe src="https://open.spotify.com/embed/track/51w9Jbat1pLeWINGCpnQUR" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+
+    <div class="example">
+        <p>Let Me Love You by Mario</p>
+        <iframe src="https://open.spotify.com/embed/track/3ibKnFDaa3GhpPGlOUj7ff" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+
+    <div class="example">
+        <p>thank u, next by Ariana Grande</p>
+        <iframe src="https://open.spotify.com/embed/track/3e9HZxeyfWwjeyPAMmWSSQ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>    </div>
+</div>
+
+<footer>
+    <p>Let's keep in touch!</p>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <br>
+    <p>Copyright © 2019 - All rights reserved</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
